@@ -23,25 +23,25 @@
     <meta name="author" content="Muhammad Usman">
 
     <!-- The styles -->
-    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link id="bs-css" href="assets/css/bootstrap-cerulean.min.css" rel="stylesheet">
 
-    <link href="css/charisma-app.css" rel="stylesheet">
-    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
-    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
-    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
-    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
-    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
-    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
-    <link href='css/jquery.noty.css' rel='stylesheet'>
-    <link href='css/noty_theme_default.css' rel='stylesheet'>
-    <link href='css/elfinder.min.css' rel='stylesheet'>
-    <link href='css/elfinder.theme.css' rel='stylesheet'>
-    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-    <link href='css/uploadify.css' rel='stylesheet'>
-    <link href='css/animate.min.css' rel='stylesheet'>
+    <link href="assets/css/charisma-app.css" rel="stylesheet">
+    <link href='assets/bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='assets/bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='assets/bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='assets/bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='assets/bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='assets/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='assets/css/jquery.noty.css' rel='stylesheet'>
+    <link href='assets/css/noty_theme_default.css' rel='stylesheet'>
+    <link href='assets/css/elfinder.min.css' rel='stylesheet'>
+    <link href='assets/css/elfinder.theme.css' rel='stylesheet'>
+    <link href='assets/css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='assets/css/uploadify.css' rel='stylesheet'>
+    <link href='assets/css/animate.min.css' rel='stylesheet'>
 
     <!-- jQuery -->
-    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="assets/bower_components/jquery/jquery.min.js"></script>
 
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -65,7 +65,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="assets/img/logo20.png" class="hidden-xs"/>
                 <span>Charisma</span></a>
 
             <!-- user dropdown starts -->
@@ -102,30 +102,6 @@
                 </ul>
             </div>
             <!-- theme selector ends -->
-
-            <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-                <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Visit Site</a></li>
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> Dropdown <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <form class="navbar-search pull-left">
-                        <input placeholder="Search" class="search-query form-control col-md-10" name="query"
-                               type="text">
-                    </form>
-                </li>
-            </ul>
-
         </div>
     </div>
     <!-- topbar ends -->
@@ -143,38 +119,15 @@
                     </div>
                     <ul class="nav nav-pills nav-stacked main-menu">
                         <li class="nav-header">Main</li>
-                        <li><a class="ajax-link" href="index.html"><i class="glyphicon glyphicon-home"></i><span> Dashboard</span></a>
+                        <li><a class="ajax-link" href="?page=home"><i class="glyphicon glyphicon-home"></i><span> Dashboard</span></a>
                         </li>
-                        <li><a class="ajax-link" href="ui.html"><i class="glyphicon glyphicon-eye-open"></i><span> UI Features</span></a>
+                        <li><a class="ajax-link" href="?page=setup"><i class="glyphicon glyphicon-eye-open"></i><span> Setup</span></a>
                         </li>
-                        <li><a class="ajax-link" href="form.html"><i
-                                    class="glyphicon glyphicon-edit"></i><span> Forms</span></a></li>
-                        <li><a class="ajax-link" href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span> Charts</span></a>
+                        <li><a class="ajax-link" href="?page=jurnal_umum"><i
+                                    class="glyphicon glyphicon-edit"></i><span> Transaksi</span></a></li>
+                        <li><a class="ajax-link" href="?page=buku_jurnal"><i class="glyphicon glyphicon-list-alt"></i><span> Laporan</span></a>
                         </li>
-                        <li><a class="ajax-link" href="typography.html"><i class="glyphicon glyphicon-font"></i><span> Typography</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="gallery.html"><i class="glyphicon glyphicon-picture"></i><span> Gallery</span></a>
-                        </li>
-                        <li class="nav-header hidden-md">Sample Section</li>
-                        <li><a class="ajax-link" href="table.html"><i
-                                    class="glyphicon glyphicon-align-justify"></i><span> Tables</span></a></li>
-                        <li class="accordion">
-                            <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Accordion Menu</span></a>
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#">Child Menu 1</a></li>
-                                <li><a href="#">Child Menu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="ajax-link" href="calendar.html"><i class="glyphicon glyphicon-calendar"></i><span> Calendar</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="grid.html"><i
-                                    class="glyphicon glyphicon-th"></i><span> Grid</span></a></li>
-                        <li><a href="tour.html"><i class="glyphicon glyphicon-globe"></i><span> Tour</span></a></li>
-                        <li><a class="ajax-link" href="icon.html"><i
-                                    class="glyphicon glyphicon-star"></i><span> Icons</span></a></li>
-                        <li><a href="error.html"><i class="glyphicon glyphicon-ban-circle"></i><span> Error Page</span></a>
-                        </li>
-                        <li><a href="login.html"><i class="glyphicon glyphicon-lock"></i><span> Login Page</span></a>
+                        <li><a class="ajax-link" href="?page=backup"><i class="glyphicon glyphicon-font"></i><span> Backup</span></a>
                         </li>
                     </ul>
                     <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>

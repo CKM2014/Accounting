@@ -1,6 +1,6 @@
 <?php
 $no_visible_elements = true;
-include('header.php'); ?>
+require('includes/header.php'); ?>
 
     <div class="row">
         <div class="col-md-12 center login-header">
@@ -14,7 +14,7 @@ include('header.php'); ?>
             <div class="alert alert-info">
                 Please login with your Username and Password.
             </div>
-            <form class="form-horizontal" action="index.html" method="post">
+            <form class="form-horizontal" action="dashboard.php" method="post">
                 <fieldset>
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
@@ -28,11 +28,6 @@ include('header.php'); ?>
                     </div>
                     <div class="clearfix"></div>
 
-                    <div class="input-prepend">
-                        <label class="remember" for="remember"><input type="checkbox" id="remember"> Remember me</label>
-                    </div>
-                    <div class="clearfix"></div>
-
                     <p class="center col-md-5">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </p>
@@ -41,4 +36,4 @@ include('header.php'); ?>
         </div>
         <!--/span-->
     </div><!--/row-->
-<?php require('footer.php'); ?>
+<?php require('includes/footer.php'); ?>
